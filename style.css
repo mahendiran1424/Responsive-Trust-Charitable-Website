@@ -1,0 +1,495 @@
+ *{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+ }
+ body{
+    scroll-behavior: smooth;
+ }
+.navbar{
+position: sticky;
+top: 0%;
+background-color: white;
+z-index: 4;
+ }
+ /* Custom styles for the video background section */
+ .image-background {
+    background-image: url(./Assets/homeBg.jpg);
+    position: relative;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    height: 70vh;
+    background-size: cover;
+    animation: slideshow 30s infinite;
+
+}
+
+@keyframes slideshow {
+    0% {
+        background-image: url('./Assets/homeBg.jpg');
+    }
+    16.67% {
+        background-image: url('./Assets/image2.jpg');
+    }
+    33.33% {
+        background-image: url('./Assets/image3.jpg');
+    }
+    50% {
+        background-image: url('./Assets/image4.jpg');
+    }
+    66.67% {
+        background-image: url('./Assets/image5.jpg');
+    }
+    83.33% {
+        background-image: url('./Assets/image7.jpg');
+    }
+    100% {
+        background-image: url('./Assets/homeBg.jpg'); /* Loop back to the first image */
+    }
+  }
+  
+.blur-effect{
+    background-color: rgba(0, 0, 0,0.5);
+    height: 70vh;
+}
+
+.image-content {
+    position: relative;
+    z-index: 2;
+    color: white;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.image-content h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.image-content .btn {
+    margin: 10px;
+}
+.style-nav{
+    background-color: brown !important;
+    margin: 0 5px 0 5px;
+}
+
+/* about */
+.about-section {
+    padding: 50px 0;
+}
+
+.about-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.about-content p {
+    margin-bottom: 20px;
+}
+.about-img{
+    width: 50%;
+    height: 50%;
+    margin: 10% 0 0 25%;
+}
+
+/* what we do */
+
+.what-we-do-section {
+    padding: 50px 20px; /* Adds padding to both left and right sides */
+}
+
+.what-we-do-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.what-we-do-section h2 {
+    font-size: 1.75rem;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.what-we-do-section p {
+    margin-bottom: 10px;
+}
+
+.img-right {
+    margin: 10px 0;
+}
+.color-someservices{
+    background-color: #ded558 !important;
+}
+.style{
+    border-radius: 40px !important;
+    height: 500px;
+
+}
+
+/* projects we have done */
+.projects-section {
+    padding: 50px 20px;
+}
+
+.projects-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.project-box {
+    position: relative;
+    color: white;
+    text-align: left;
+    padding: 20px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.project-box h2 {
+    font-size: 1.75rem;
+    margin-bottom: 10px;
+}
+
+.project-box p {
+    margin-bottom: 15px;
+}
+
+.project-box .btn {
+    position: relative;
+    z-index: 2;
+}
+
+.project-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(16, 16, 16, 0.5);
+    border-radius: 20px;
+}
+.text{
+    color: white !important;
+}
+
+/* piechart page */
+.bg {
+    background-color: #000; /* Black background */
+    color: white;
+}
+
+.donations-section {
+    padding: 50px 20px;
+}
+
+.donations-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.donations-section p {
+    margin-bottom: 20px;
+}
+
+.icon-box {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.green-box {
+    background-color: green;
+}
+
+.purple-box {
+    background-color: purple;
+}
+
+.sandal-box {
+    background-color: #f4a460; /* Sandal color */
+}
+
+.yellow-box {
+    background-color: yellow;
+}
+
+.pink-box {
+    background-color: pink;
+}
+
+/* contribute section */
+.contribute-section {
+    background-image: url('./Assets/contribute\ img.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.contribute-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.contribute-content .btn {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+}
+.contribute-style{
+    margin-top: 20px;
+    border-radius: 40px;
+}
+
+/* donate */
+.donate-section {
+    padding: 50px 20px;
+}
+
+.donate-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.donate-section p {
+    margin-bottom: 20px;
+}
+
+.donate-section .btn {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+}
+.donate-img{
+    margin-top: 2em;
+}
+
+/* Events */
+.events-section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.events-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.event-box {
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: #f8f9fa;
+}
+
+.event-box .event-date {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #007bff;
+}
+
+.event-box .event-title {
+    font-size: 1.25rem;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.event-box .btn {
+    padding: 5px 15px;
+}
+
+/* last section */
+.three-sections {
+    background-color: black;
+    color: white;
+    overflow: hidden;
+}
+
+.three-sections .section {
+    padding: 20px;
+}
+
+.three-sections img {
+    max-width: 100%;
+    height: 15vh;
+    border-radius: 5px;
+}
+
+.three-sections .text-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.three-sections .btn-orange {
+    background-color: orange;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+}
+
+.three-sections .btn-orange:hover {
+    background-color: darkorange;
+}
+/* General Contact Section Styles */
+.contact {
+    background-color: aliceblue;
+    padding: 2em;
+}
+
+.contact h2 {
+    text-align: center;
+    margin-bottom: 1.5em;
+}
+
+.contact-section-1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 2em;
+}
+
+.contact-us, .send-message {
+    flex: 1 1 45%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+.founder img, .general-Secretary img {
+    height: 200px;
+    width: 200px;
+    border-radius: 10px;
+    margin-bottom: 1em;
+}
+
+.one {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+    justify-content: center;
+}
+
+.additional-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2em;
+    margin-top: 1.5em;
+    text-align: left;
+}
+
+.address, .email {
+    width: 30%;
+    padding: 1em;
+}
+
+/* Contact Form Styles */
+.contact-form-container {
+    text-align: left;
+}
+
+.contact-form-container h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    text-align: center;
+}
+
+.contact-form .form-group {
+    margin-bottom: 15px;
+}
+
+.contact-form .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.contact-form .form-group input,
+.contact-form .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.contact-form .form-group textarea {
+    resize: vertical;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #e65c00;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .contact-section-1 {
+        flex-direction: column;
+    }
+
+    .contact-us, .send-message {
+        flex: 1 1 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact-form-container h2 {
+        font-size: 20px;
+    }
+
+    .contact-form .form-group input,
+    .contact-form .form-group textarea {
+        font-size: 14px;
+    }
+
+    .submit-btn {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-form-container h2 {
+        font-size: 18px;
+    }
+
+    .submit-btn {
+        font-size: 12px;
+    }
+
+    .one, .additional-info {
+        flex-direction: column;
+    }
+
+    .address, .email {
+        flex: 1 1 100%;
+    }
+}
+footer{
+    text-align: center;
+}
+footer a{
+    color: white;
+    margin-right: 1.5em;
+}
